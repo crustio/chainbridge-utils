@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/centrifuge/go-substrate-rpc-client/signature"
+	"github.com/crustio/go-substrate-rpc-client/v3/signature"
 )
 
 func TestNewKeypairFromSeed(t *testing.T) {
