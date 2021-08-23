@@ -4,8 +4,8 @@
 package core
 
 import (
-	metrics "github.com/MyronFanQiu/chainbridge-utils/metrics/types"
-	"github.com/MyronFanQiu/chainbridge-utils/msg"
+	metrics "github.com/crustio/chainbridge-utils/metrics/types"
+	"github.com/crustio/chainbridge-utils/msg"
 )
 
 type Chain interface {

@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/MyronFanQiu/chainbridge-utils/msg"
+	"github.com/crustio/chainbridge-utils/msg"
 	"github.com/ChainSafe/log15"
 )
 

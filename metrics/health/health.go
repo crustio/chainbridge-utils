@@ -11,8 +11,8 @@ import (
 	"path"
 	"time"
 
-	"github.com/MyronFanQiu/chainbridge-utils/core"
-	"github.com/MyronFanQiu/chainbridge-utils/msg"
+	"github.com/crustio/chainbridge-utils/core"
+	"github.com/crustio/chainbridge-utils/msg"
 	log "github.com/ChainSafe/log15"
 )
 
