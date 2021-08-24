@@ -11,8 +11,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ChainSafe/chainbridge-utils/crypto/secp256k1"
-	"github.com/ChainSafe/chainbridge-utils/crypto/sr25519"
+	"github.com/crustio/chainbridge-utils/crypto/secp256k1"
+	"github.com/crustio/chainbridge-utils/crypto/sr25519"
 )
 
 func TestEncryptAndDecrypt(t *testing.T) {
@@ -109,7 +109,7 @@ func TestEncryptAndDecryptFromFile_Sr25519(t *testing.T) {
 	file, fp := createTestFile(t)
 	defer os.Remove(fp)
 
-	kp, err := sr25519.NewKeypairFromSeed("//seed", "substrate")
+	kp, err := sr25519.NewKeypairFromSeed("//seed", 42)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -134,7 +134,7 @@ func TestDecryptIncorrectType(t *testing.T) {
 	file, fp := createTestFile(t)
 	defer os.Remove(fp)
 
-	kp, err := sr25519.NewKeypairFromSeed("//seed", "substrate")
+	kp, err := sr25519.NewKeypairFromSeed("//seed", 42)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -144,7 +144,7 @@ func TestDecryptIncorrectType(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	_, err = ReadFromFileAndDecrypt(fp, password, "secp256k1")
+	_, err = ReadFromFileAndDecrypt(fp, password, 42)
 	if err == nil {
 		t.Fatal("Expected mismatch error, got none.")
 	}
