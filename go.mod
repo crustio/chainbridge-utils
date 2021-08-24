@@ -5,7 +5,7 @@ go 1.13
 require (
 	github.com/ChainSafe/log15 v1.0.0
 	github.com/btcsuite/btcd v0.20.1-beta // indirect
-	github.com/crustio/go-substrate-rpc-client/v3 v3.0.3
+	github.com/crustio/go-substrate-rpc-client/v3 v3.1.0
 	github.com/ethereum/go-ethereum v1.9.17
 	github.com/golang/protobuf v1.3.3 // indirect
 	github.com/kr/pretty v0.2.0 // indirect
