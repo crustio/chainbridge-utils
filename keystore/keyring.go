@@ -9,7 +9,7 @@ import (
 	"github.com/crustio/chainbridge-utils/crypto"
 	"github.com/crustio/chainbridge-utils/crypto/secp256k1"
 	"github.com/crustio/chainbridge-utils/crypto/sr25519"
-	"github.com/crustio/go-substrate-rpc-client/v3/signature"
+	"github.com/crustio/go-substrate-rpc-client/v4/signature"
 )
 
 // The Constant "keys". These are the name that the keys are based on. This can be expanded, but
